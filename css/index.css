@@ -1,0 +1,402 @@
+.w .main {
+    width: 981px;
+    height: 456px;
+    /* background-color: pink; */
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+    background-color: purple;
+}
+
+
+/* .main .focus ul {
+    position: absolute;
+    width: 500%;
+}
+
+.main .focus ul li {
+    float: left;
+} */
+
+ol.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+}
+
+.current {
+    background-color: #fff!important;
+}
+
+
+/* .main .focus ol.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+} */
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    padding: 5px 2px;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 20px;
+    color: #fff;
+    z-index: 500;
+}
+
+.main .focus .arrow-l {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .focus .arrow-r {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .newsflash {
+    float: right;
+    width: 251px;
+    height: 100%;
+    /* background-color: royalblue; */
+}
+
+.main .newsflash .news {
+    height: 165px;
+    border: 1px solid #e5e5e5;
+}
+
+.main .newsflash .lifeservice {
+    overflow: hidden;
+    height: 211px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+}
+
+.newsflash .news .news-hd {
+    position: relative;
+    height: 33px;
+    padding: 0 10px;
+    border-bottom: 1px dotted #e9e9e9;
+    line-height: 33px;
+}
+
+.news .news-hd h3 {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.news .news-hd a {
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+}
+
+.news .news-hd a::after {
+    content: '\e918';
+    margin-left: 5px;
+    font-family: 'icomoon';
+}
+
+.news .news-bd ul {
+    padding: 8px 0 0 16px;
+}
+
+.news .news-bd ul li {
+    height: 25px;
+}
+
+.main .newsflash .lifeservice ul {
+    width: 256px;
+}
+
+.main .newsflash .lifeservice ul li {
+    float: left;
+    padding: 14px 0 0 21px;
+    width: 64px;
+    height: 71px;
+    border-right: 1px solid #e8e8e7;
+    border-bottom: 1px solid #e8e8e7;
+}
+
+.lifeservice ul li i {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/icons.png) no-repeat -16px -16px;
+}
+
+.newsflash .bargain {
+    height: 76px;
+    margin-top: 5px;
+}
+
+.recom {
+    height: 165px;
+    margin-top: 10px;
+    background-color: darkseagreen;
+}
+
+.recom .recom-hd {
+    float: left;
+    width: 207px;
+    height: 165px;
+    padding: 30px 0 0 60px;
+    background-color: #5c5251;
+}
+
+.recom .recom-bd {
+    float: left;
+    width: 993px;
+    height: 165px;
+    background-color: #ebebeb;
+}
+
+.recom .recom-bd ul li {
+    float: left;
+    height: 142px;
+    width: 246px;
+    margin: 10px auto;
+    border-right: 1px solid #ccc;
+}
+
+.recom .recom-bd ul li:last-child {
+    border-right: none;
+}
+
+.recom-bd ul li a img {
+    margin: 10px 30px;
+}
+
+.guess {
+    height: 272px;
+    margin-top: 22px;
+    /* background-color: deeppink; */
+}
+
+.guess .guess-hd {
+    position: relative;
+    height: 38px;
+    /* background-color: deepskyblue; */
+    border-bottom: 1px solid #ededed;
+    line-height: 38px;
+}
+
+.guess .guess-hd h2 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.guess .guess-hd a {
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+}
+
+.guess .guess-hd a::after {
+    content: '\e91b';
+    font-family: 'icomoon';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.guess .guess-bd {
+    height: 235px;
+    overflow: hidden;
+    border: 1px solid #ededed;
+}
+
+.guess .guess-bd ul {
+    width: 1224px;
+}
+
+.guess .guess-bd ul li {
+    float: left;
+    width: 204px;
+    height: 235px;
+    padding: 0 30px;
+    border-right: 1px solid #ededed;
+}
+
+.guess-bd ul li a img {
+    margin: 26px 0 0;
+}
+
+.guess-bd ul li a i {
+    display: block;
+    font-size: 18px;
+    color: #df3033;
+    margin-top: 5px;
+}
+
+.computer,
+.tech,
+.home,
+.jiadian {
+    margin-top: 20px;
+}
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.box-hd ul {
+    float: right;
+}
+
+.box-hd ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.box-hd ul li a {
+    margin: 0 10px;
+}
+
+.box-bd {
+    height: 362px;
+    /* width: 1200px; */
+    /* background-color: chartreuse; */
+}
+
+.fixedcolor {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    width: 66px;
+    margin-left: -667px;
+    display: none;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    /* color: #ccc; */
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.wid210 {
+    float: left;
+    width: 210px;
+    height: 362px;
+    padding-left: 14px;
+    background-color: #f9f9f9;
+}
+
+.wid210 ul li {
+    float: left;
+    margin-right: 10px;
+    width: 88px;
+    height: 33px;
+    border-bottom: 1px solid #ededed;
+    line-height: 33px;
+    text-align: center;
+}
+
+.wid210 img {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 196px;
+    width: 152px;
+}
+
+.wid331 {
+    float: left;
+    width: 331px;
+    height: 362px;
+    padding: 33px 0 0 30px;
+    background-color: #aed6d8;
+}
+
+.wid221 {
+    float: left;
+    width: 219px;
+    height: 362px;
+    border-left: 1px solid #ededed;
+}
+
+.wid221a {
+    float: left;
+    width: 219px;
+    height: 362px;
+    padding: 50px 0 0 22px;
+    border-left: 1px solid #ededed;
+}
+
+.wid221 .bb {
+    height: 180px;
+    border-bottom: 1px solid #ededed;
+    padding: 20px 0 0 15px;
+}
+
+.wid221 .nm {
+    padding: 20px 0 0 15px;
+}
+
+.example {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    background-color: #464576;
+}
+
+.carousel-item {
+    line-height: 336px;
+    color: #fff;
+    font-family: Arial Black
+}
+
+.carousel-item img {
+    transition: none!important;
+}
+
+.carousel-item img:hover {
+    transform: none;
+}
+
+img {
+    transition: all .3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* 放大1.5倍 */
+}
